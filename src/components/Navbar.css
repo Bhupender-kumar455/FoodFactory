@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+body{
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Lato', sans-serif;
+}
+.navbar{
+    width: 100%;
+    position: sticky;
+    height: 70px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar-first-part{
+    display: flex;
+    align-items: center;
+}
+.navbar-logo{
+    max-width: 70px;
+    padding: 10px;
+    margin-right: auto;
+}
+.navbar-first-part > a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar-input{
+    width: 300px;
+    font-size: 15px;
+    height: 40px;
+    margin:0 20px;
+    border: none;
+    border-radius: 20px;
+    text-indent: 20px;
+}
+.navbar-input:focus{
+    outline: none;
+}
+.menu{
+    display: none;
+    transition: all 0.3s ease;
+}
+.menu:active{
+    transform: scale(1.2)
+}
+
+.navbar-second-part a{
+    text-decoration: none;
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 20px;
+}
+@media screen and (max-width: 690px) {
+    .navbar-second-part {
+      display: none;
+    }
+    .menu{
+        display: block;
+        margin-right:10px;
+        width: 45px;
+    }
+    .navbar-first-part a{
+        display: none;
+    }
+    
+  }
+  .toggle-part{
+    display: flex;
+    width: 100vw;
+    background-color: rgb(198, 232, 228);
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .toggle-part a{
+    text-decoration: none;
+    padding: 20px 0;
+    font-size: 30px;
+    color: black;
+  }
+  .toggle-part a:hover{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
